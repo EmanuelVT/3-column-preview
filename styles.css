@@ -1,0 +1,152 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+.container {
+    overflow-y: visible;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 95%);
+    margin-top: 40px;
+}
+
+p {
+    line-height: 25px;
+    width: 85%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.cars {
+    
+    width: 937.5px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+}
+
+.cars div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 55px;
+    background-color: hsl(31, 77%, 52%);
+
+}
+
+.cars .suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.cars .luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+svg {
+
+    margin-top: 30px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0);
+    background-color: hsl(0, 0%, 95%);
+    width: fit-content;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 360px;
+    padding: 15px 35px 15px 35px;
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: 20px;
+
+
+}
+
+.sedans a {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs a {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury a {
+    color: hsl(179, 100%, 13%);
+}
+
+a:active {
+    background-color: rgba(0, 0, 0, 0);
+    color: hsl(0, 0%, 95%);
+}
+
+
+@media only screen and (max-width: 933px) {
+    .cars {
+        width: 800px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+   
+
+    .container {
+        height: 120vh;
+    }
+
+
+    .cars {
+        flex-direction: column;
+        width: 300px;
+        height: 1350px;
+        margin-top: 420px;
+    }
+
+    .cars .luxury {
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .cars div {
+        height: 400px;
+    }
+
+    a {
+        margin-left: 0px;
+    }
+}
+
+
+@media only screen and (max-height: 774px) {
+   
+
+    .cars {
+        margin-top: 600px;
+    }
+}
+
+
+@media only screen and (max-height: 629px) {
+    .cars {
+        margin-top: 850px;
+    }
+}
